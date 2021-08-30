@@ -20,7 +20,7 @@
 
                       <div class="parent">
                           <div class="right">
-                            <p class="currentDate" >Monday | 30.08.2021</p>
+                            <p *ngIf='!deskMobWidth()' class="currentDate" >Monday | 30.08.2021</p>
                           </div>
                         </div>
                       <!-- <ol class="breadcrumb float-sm-right">
@@ -33,13 +33,22 @@
                 <div class="container-fluid">
                   <div class="row mb-2">
                     <div class="col-sm-6">
-                      <p class="title" >Welcome Pratik,</p>
+                      <p class="title" *ngIf='!deskMobWidth()'>Welcome Pratik,</p>
+                      <p class="title" *ngIf='deskMobWidth()'>Dashboard</p>
                     </div><!-- /.col -->
-                    <div class="col-sm-6">
-                      <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><p class="title" >Global Tuch</p></li>
+                    <div class="col-lg-6 col-sm-3">
+                      <ol class="breadcrumb float-sm-right" style="float: right;
+                      margin-right: 34px;">
+                        <li class="breadcrumb-item" style="
+                        float: right;
+                            margin-right: 51px;"><p class="title" >Global Tuch</p></li>
                       </ol>
                     </div><!-- /.col -->
+                    <div class="col-sm-3">
+         
+                          <p *ngIf='deskMobWidth()' class="currentDate" style="float: right;margin-top: -36px;">03 OCT 2021</p>
+                    </div><!-- /.col -->
+                   
                   </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
 
@@ -48,16 +57,18 @@
 
                     <div class='container'>
 
+                    
+
                       <div class="row" style="margin-top: 10px;">
                        
-                          <div class="col-lg-2 col-md-6 col-sm-4">           
+                          <div class="col-lg-2 col-6">           
                             <div class="btnLable">
                               Total
                             </div>
                             <button type="button" class="btn activeButton">500</button>
                           </div>
 
-                          <div class="col-lg-2 col-md-6  col-sm-4">
+                          <div class="col-lg-2 col-6">
                             <div class="btnLable">
                               <img src="assets/img/Group 31546.svg"  alt="twitter">
                                In
@@ -65,7 +76,7 @@
                             <button type="button" class="btn">479</button>
                           </div>          
 
-                          <div class="col-lg-2 col-md-6  col-sm-4">
+                          <div class="col-lg-2 col-6">
                             <div  class="btnLable">
                               <img src="assets/img/Group 31547.svg"  alt="twitter">
                               Out
@@ -73,7 +84,7 @@
                             <button type="button" class="btn ">463</button>
                           </div>
 
-                          <div class="col-lg-2 col-md-6  col-sm-4">
+                          <div class="col-lg-2 col-6">
                             <div  class="btnLable">
                               <img src="assets/img/Group 31550.svg"  alt="twitter">
                               No Activity
@@ -81,34 +92,55 @@
                             <button type="button" class="btn ">21</button>
                           </div> 
 
-                          <div class="col-lg-2 col-md-6">
+                          <div class="col-lg-3 col-md-12">
                             <div  class="btnLable">Site Location (2)</div>
                             <input class ='searchInput' type="text" placeholder="Search Site Location..">
                           </div> 
                       
                       </div> 
 
-                     
-                      <div class="row" style="margin-top:30px;">
-                        <div class="col-md-12">
-                          <div class="parent">
-                            <div class="right">
-                              <button type="button" class="btn viewAttendance ">View Attendance</button>
+                      <div class="row justify-content-end" style="margin-top:20px;">
+
+                        <div class="col-lg-2 col-6">           
+                          <button type="button" class="btn viewAttendance ">View Attendance</button>
+                        </div>
+                        <!-- <div class="row " style="margin-top:10px;">
+                          <div class="col-md-12">
+                            <div class="parent">
+                              <div class="right">
+                                <button type="button" class="btn viewAttendance ">View Attendance</button>
+                                
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      
+                        
+                        </div> -->
                       </div>
-                        
-                        
-                   
-                                 
-                        <div class="row" style="margin-top:50px;">
+                         
+                      
+                      <div class="card card-default "  style="margin-top:30px;">
+                        <div class="row justify-content-end" >
+
+                          <div class="col-lg-2 col-6">                           
+                            <span class='dateTitle'>From</span>
+                            <input class="dateInput" name="date" [(ngModel)]="today" type="date" required>
+                          </div>
+        
+                          <div class="col-lg-2 col-6">           
+                            <span class='dateTitle'>To</span>
+                            <input  class="dateInput" name="date" [(ngModel)]="today" type="date" required>
+                          </div>
+        
+          
+        
+                        </div>
+  
+                        <div class="row"  style="margin-top:10px;padding: 10px;">
                           <div class="col-md-6">
                                     <!-- DONUT CHART -->
                             <div class="card" >
                               <div class="card-header">
-                                <h3 class="card-title">Time Statistics</h3>
+                                <p class="card-title">Time Statistics</p>
                               </div>
                               <div class="card-body">
                                 <canvas id="canvas"></canvas>
@@ -116,14 +148,13 @@
                               <!-- /.card-body -->
                             </div>
                          <!-- /.card -->
-                 
-                              
+                                      
                           </div>
                           <div class="col-md-6">
-
+        
                             <div class="card ">
                               <div class="card-header">
-                                <h3 class="card-title">Today's Trand</h3>
+                                <p class="card-title">Today's Trand</p>
               
                               </div>
                               <div class="card-body">
@@ -135,20 +166,26 @@
                           </div>
                       </div>
                         
-                      </div>            
-                   
+                      </div>
+
+                      </div>
+
+                    
+
+
+                      
+                      </div>
+
+                      
+                                          
+                                   
+            
                   </div>   
 
                  </div>
 
               </div>
 
-              <div class="container-fluid">
-
-              </div>
-              <div class="container-fluid">
-
-              </div>
     </div>
        
  

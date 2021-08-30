@@ -10,36 +10,14 @@ export class DashboradComponent implements OnInit {
   chart: any;
   lineChart:any;
   NUMBER_CFG = {count: 7, min: 0, max: 10};
+ today: string;
 
-  // public pieChartLabels:string[] = ["Unrated", "A & Above", "BBB", "BBB+", "BBB & Above"];
-  // public pieChartData:number[] = [21, 39, 10, 14, 16];
-
-  // public pieChartType:string = 'pie';
-  // public pieChartOptions:any = {responsive: true ,'backgroundColor': [
-  //              "#FF6384",
-  //           "#4BC0C0",
-  //           "#FFCE56",
-  //           "#E7E9ED",
-  //           "#36A2EB"
-  //           ]}
-
-  // public chartData = [
-  //             { data: [330, 600, 260, 700], label: 'Company A' },
-  //             { data: [120, 455, 100, 340], label: 'Company B' },
-  //             { data: [45, 67, 800, 500], label: 'Company C' }
-  //           ];
-
-  //           public chartData1 = [
-  //             { data: [330, 600, 260, 700], label: 'Year 2016' },
-  //             { data: [120, 455, 100, 340], label: 'Year 2017' },
-  //             { data: [45, 67, 800, 500], label: 'Year 2018' }
-  //           ];
-          
-  // public chartLabels = ['January', 'February', 'Mars', 'April'];
-
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit() {
+   
+    this.today = new Date().toISOString().split('T')[0];
 
     this.chart = new Chart('canvas', {
       type: 'doughnut',
@@ -72,7 +50,7 @@ export class DashboradComponent implements OnInit {
         labels: ['00:30','03:30','06:30','09:30','13:30'],
         datasets: [{
           label: 'Employee Present',
-          data: [0, 1, 0, 0, 1],
+          data: [0, 1,0,10,1],
           fill: false,
           borderColor: '#4386EF',
         }]
@@ -88,6 +66,12 @@ export class DashboradComponent implements OnInit {
       }
     });
   }
+
+  deskMobWidth()
+  {
+    return (window.innerWidth > 480) ? false : true;
+  }
+
 // events on slice click
 public onChartClicked(e:any):void {
   console.log(e);
