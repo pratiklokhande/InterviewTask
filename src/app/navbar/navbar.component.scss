@@ -6,7 +6,7 @@
 }
 .navbar-brand
 {
-    position: relative;
+    position: absolute;
     width: 100%;
     left: 0;
     text-align: center;
@@ -14,4 +14,10 @@
 }
 .navbar-toggle {
     z-index:3;
+}
+
+.topnavbar{
+    @media only screen and (max-width: 600px) {
+       display: none;
+      }
 }
