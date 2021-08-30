@@ -1,0 +1,61 @@
+.title{
+    font-size: 24px;
+    color: black;
+}
+.currentDate{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4E4E4E;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  color: #ccc;
+  background-color: #ccc;
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+  }
+
+  .btn{
+      border: 1px solid lightgrey;
+      border-radius: 10px;
+      font-size: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 100%;
+      color: #707070;
+  }
+  .activeButton{
+      background-color: #2B388F;
+      color: white;
+  }
+
+  .searchInput{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 100%;
+  }
+  .btnLable{
+    margin-bottom: 2px;
+    color: #707070;
+    font-size: 12px;
+  }
+  .parent {
+    position: relative;
+  }
+  .right {
+      position: absolute;
+      right: 0;
+  }
+
+  .viewAttendance{
+    color: #0363FC;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #0363FC;
+
+  }

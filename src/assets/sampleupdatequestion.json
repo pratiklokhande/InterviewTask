@@ -1,0 +1,55 @@
+
+[
+    {
+    "catId":2,
+    "mquesId":120,
+    "questions": [
+        {
+            "quesId": 311,
+            "optChoice": [
+                {
+                    "optId": 1337,
+                    "weightage": 7,
+                    "en": "Work extra hours",
+                    "bn": "অতিরিক্ত ঘন্ট",
+                    "hi": "अतिरिक्त घंटे काम करें"
+                    
+                },
+                {
+                    "optId": 1338,
+                    "weightage": 3,
+                    "en": "Spend from savings",
+                    "bn": "সঞ্চয় থেকে ব্যট",
+                    "hi": "बचत से खर्च करें"
+                },
+                {
+                    "optId": 1339,
+                    "weightage": 4,
+                    "en": "3-4 years",
+                    "bn": "৩-৪ বছর",
+                    "hi": "3-4 साल"
+                },
+                {
+                    "optId": 1340,
+                    "weightage": 1,
+                    "en": "Take loans",
+                    "bn": "লোনা্ট",
+                    "hi": "कर्ज लो"
+                },
+                {
+                    "optId": 1341,
+                    "weightage": 5,
+                    "optionType": null,
+                    "optionIndex": null,
+                    "en": "More than 5 years",
+                    "bn": "৫ বছরেরও বেশি সময়",
+                    "hi": "5 साल से अधिक"
+                }
+            ],
+            "en": "What you do when  ?",
+            "bn": "আপনি যখন পরবর্তী ?",
+            "hi": "जब आप अगली आय ?"
+        }
+    ]
+}
+]

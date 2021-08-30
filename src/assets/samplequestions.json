@@ -1,0 +1,129 @@
+[
+  {
+    "question": [
+      {
+        "optChoice": [
+          {
+            "weightage": 5,
+            "en": "More than 5 years",
+            "hi": "5 साल से अधिक",
+            "bn": "৫ বছরেরও বেশি সময়"
+          },
+          {
+            "weightage": 4,
+            "en": "3-4 years",
+            "hi": "3-4 साल",
+            "bn": "৩-৪ বছর"
+          },
+          {
+            "weightage": 3,
+            "en": "Work extra hours",
+            "hi": "अतिरिक्त घंटे काम करें",
+            "bn": "অতিরিক্ত ঘন্ট"
+          },
+          {
+            "weightage": 2,
+            "en": "Spend from savings",
+            "hi": "बचत से खर्च करें",
+            "bn": "সঞ্চয় থেকে ব্যট"
+          },
+          {
+            "weightage": 1,
+            "en": "Take loans",
+            "hi": "कर्ज लो",
+            "bn": "লোনা্ট"
+          }
+        ],
+         "en": "What you do when you run out of money before the next income arrives?",
+          "hi": "जब आप अगली आय आने से पहले पैसे से बाहर भागते हैं तो आप क्या करते हैं?",
+          "bn": "আপনি যখন পরবর্তী আয় আসার আগে অর্থ শেষ হয়ে গেলেন তখন আপনি কী করবেন?"
+      },
+      {
+        "optChoice": [
+          {
+            "weightage": 5,
+            "en": "More than 5 years",
+            "hi": "5 साल से अधिक",
+            "bn": "৫ বছরেরও বেশি সময়"
+          },
+          {
+            "weightage": 4,
+            "en": "3-4 years",
+            "hi": "3-4 साल",
+            "bn": "৩-৪ বছর"
+          },
+          {
+            "weightage": 3,
+            "en": "Work extra hours",
+            "hi": "अतिरिक्त घंटे काम करें",
+            "bn": "অতিরিক্ত ঘন্ট"
+          },
+          {
+            "weightage": 2,
+            "en": "Spend from savings",
+            "hi": "बचत से खर्च करें",
+            "bn": "সঞ্চয় থেকে ব্যট"
+          },
+          {
+            "weightage": 1,
+            "en": "Take loans",
+            "hi": "कर्ज लो",
+            "bn": "লোনা্ট"
+          }
+        ],
+         "en": "What you do when you run out of money before the next income arrives?",
+          "hi": "जब आप अगली आय आने से पहले पैसे से बाहर भागते हैं तो आप क्या करते हैं?",
+          "bn": "আপনি যখন পরবর্তী আয় আসার আগে অর্থ শেষ হয়ে গেলেন তখন আপনি কী করবেন?"
+      },
+      {
+        "optChoice": [
+          {
+            "weightage": 5,
+            "en": "More than 5 years",
+            "hi": "5 साल से अधिक",
+            "bn": "৫ বছরেরও বেশি সময়"
+          },
+          {
+            "weightage": 4,
+            "en": "3-4 years",
+            "hi": "3-4 साल",
+            "bn": "৩-৪ বছর"
+          },
+          {
+            "weightage": 3,
+            "en": "Work extra hours",
+            "hi": "अतिरिक्त घंटे काम करें",
+            "bn": "অতিরিক্ত ঘন্ট"
+          },
+          {
+            "weightage": 2,
+            "en": "Spend from savings",
+            "hi": "बचत से खर्च करें",
+            "bn": "সঞ্চয় থেকে ব্যট"
+          },
+          {
+            "weightage": 1,
+            "en": "Take loans",
+            "hi": "कर्ज लो",
+            "bn": "লোনা্ট"
+          }
+        ],
+         "en": "What you do when you run out of money before the next income arrives?",
+          "hi": "जब आप अगली आय आने से पहले पैसे से बाहर भागते हैं तो आप क्या करते हैं?",
+          "bn": "আপনি যখন পরবর্তী আয় আসার আগে অর্থ শেষ হয়ে গেলেন তখন আপনি কী করবেন?"
+      }
+    ],
+
+    "mstrquesLvls": [
+      {
+         "id": 1
+      }
+    ],
+    
+    "mstrquesCategories": [
+      {   
+          "id": 1
+      }
+    ]
+  }
+]
